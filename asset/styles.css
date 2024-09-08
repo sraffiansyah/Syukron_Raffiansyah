@@ -1,85 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.biodata-title {
+    text-align: center;
+    font-size: 1.5rem; /* Ukuran font yang lebih besar */
+    font-family: "SUSE", system-ui;
 }
 
-body {
-    font-family: Arial, sans-serif;
+.biodata-info {
+    text-align: center;
+    font-size: 1.2rem; /* Ukuran font yang lebih besar */
+    font-family: "Edu VIC WA NT Beginner", system-ui;
 }
 
-header {
-    background-color: cyan;
-    padding: 10px 20px;
-}
-
-nav {
+.image-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-list {
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-list li {
-    margin-left: 20px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: black;
-}
-
-.hamburger {
-    display: none;
-    font-size: 1.5rem;
+.profile-image {
+    width: 20rem;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-#check {
-    display: none;
+.profile-image-container {
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 4rem auto 1rem;
+    width: 20rem;
+    height: 26.7rem;
+    border-radius: 20px;
 }
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: darkblue;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    .nav-list {
-        position: fixed;
-        top: 60px;
-        left: -100%;
-        background-color: cyan;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        transition: all 0.5s;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    #check:checked ~ .nav-list {
-        left: 0;
-    }
+.profile-image:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
